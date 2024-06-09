@@ -11,6 +11,6 @@ public class Blog
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
     public int UserId { get; set; }
     public User User { get; set; }
-    public List<Comment> comments { get; set; }
+    public List<Comment> Comments { get; set; }
 
 }
