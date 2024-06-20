@@ -8,7 +8,7 @@ namespace Infrastructure
         public BlogDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<BlogDbContext>();
-            optionsBuilder.UseSqlServer(@"");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Blog;Integrated Security=True;Encrypt=False");
             return new BlogDbContext(optionsBuilder.Options);
         }
     }

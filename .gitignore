@@ -131,3 +131,6 @@ publish/
 # Ignore generated files by other tools
 Generated\ Files/
 ASALocalRun/
+
+# Ignore appsettings.json
+src/API/appsettings.json
